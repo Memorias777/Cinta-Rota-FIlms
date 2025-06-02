@@ -202,9 +202,22 @@ footer a:hover {
   border-radius: 1rem;
   margin: 2rem 0;
 }
-
-.paquete {
-  background-color: rgb(255, 215, 0);
+.paquete_basico {
+  background-color: #e7c500;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+.paquete_estandar {
+  background: linear-gradient(135deg, #ae06f0, #45f2f8);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+.paquete_premium {
+  background: linear-gradient(135deg, #ff0000, #9600fa);
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   padding: 1.5rem;
