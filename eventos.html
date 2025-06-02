@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Eventos | Cinta Rota Films</title>
   <link rel="stylesheet" href="styles.css" />
+  <!-- Lightbox CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+
 </head>
 <body>
   <header>
@@ -66,8 +69,10 @@
     <h2>Galería de Eventos</h2>
     <div class="galeria">
       <div class="foto">
-        <img src="fotos/eventos/evento1.jpg" alt="Evento 1" />
-        <p>Evento 1</p>
+        <a href="fotos/eventos/evento1.jpg" data-lightbox="galeria-eventos" data-title="Nombre del evento">
+  <img src="fotos/eventos/evento1.jpg" alt="Evento">
+</a>
+
       </div>
       <div class="foto">
         <img src="fotos/eventos/evento2.jpg" alt="Evento 2" />
@@ -88,6 +93,9 @@
     <p>© 2025 Cinta Rota Films. Síguenos en Instagram, YouTube y Facebook. <br />
     <a href="https://wa.me/524921964376" target="_blank">WhatsApp: 492 196 43 76</a></p>
   </footer>
+<!-- Lightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
 </body>
 </html>
 
