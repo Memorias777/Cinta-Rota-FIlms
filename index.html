@@ -4,65 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cinta Rota Films</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Cinta Rota Films</h1>
-    <p>¿Necesitas fotos o videos para un evento, cumpleaños o redes sociales? <strong>¡En Cinta Rota Films lo hacemos!</strong></p>
-    <p class="contacto">📲 Cotiza sin compromiso: 492 196 43 76</p>
+    <nav class="navbar">
+      <div class="logo">Cinta Rota Films</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="video.html">Videoclips</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h1>¿Necesitas fotos o videos para un evento, cumpleaños o redes sociales?</h1>
+      <p>¡En Cinta Rota Films lo hacemos!</p>
+      <a href="https://wa.me/524921964376" class="cta">Cotiza sin compromiso</a>
+    </section>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#retratos">Retratos</a></li>
-      <li><a href="#eventos">Eventos</a></li>
-      <li><a href="#fiestas">Fiestas</a></li>
-      <li><a href="#videoclips">Videoclips</a></li>
-      <li><a href="#paquetes">Paquetes</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-
-  <section id="retratos">
-    <h2>Retratos</h2>
-    <div class="galeria"> <!-- Agrega tus imágenes aquí --> </div>
-  </section>
-
-  <section id="eventos">
-    <h2>Eventos</h2>
-    <div class="galeria"> </div>
-  </section>
-
-  <section id="fiestas">
-    <h2>Fiestas</h2>
-    <div class="galeria"> </div>
-  </section>
-
-  <section id="videoclips">
-    <h2>Videoclips</h2>
-    <div class="galeria"> </div>
-  </section>
-
-  <section id="paquetes">
-    <h2>Paquetes</h2>
-    <ul class="paquetes">
-      <li><strong>Paquete Básico:</strong> 10 fotos editadas + 1 video corto (hasta 30s)</li>
-      <li><strong>Paquete Pro:</strong> 25 fotos + 1 video de hasta 2 mins</li>
-      <li><strong>Paquete Premium:</strong> cobertura completa + video profesional</li>
-    </ul>
-  </section>
-
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>📱 WhatsApp: <strong>492 196 43 76</strong></p>
-    <p>📷 Instagram / Facebook / YouTube: <strong>@cintarotafilms</strong></p>
-  </section>
+  <main>
+    <section class="portafolio">
+      <h2>Portafolio</h2>
+      <div class="galeria">
+        <div class="foto"><img src="fotos/retrato/retrato1.jpg" alt="Retrato 1"><p>Retratos</p></div>
+        <div class="foto"><img src="fotos/eventos/evento1.jpg" alt="Evento 1"><p>Eventos</p></div>
+        <div class="foto"><img src="fotos/fiestas/fiesta1.jpg" alt="Fiesta 1"><p>Fiestas</p></div>
+        <div class="foto"><img src="fotos/videos/video1.jpg" alt="Videoclip 1"><p>Videoclips</p></div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Cinta Rota Films. Todos los derechos reservados.</p>
+    <p>Síguenos en Instagram, YouTube y Facebook: <strong>@cintarotafilms</strong></p>
+    <p>WhatsApp: <a href="https://wa.me/524921964376">492 196 43 76</a></p>
+    <p>&copy; 2025 Cinta Rota Films</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
