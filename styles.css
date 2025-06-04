@@ -181,7 +181,7 @@ header {
 .slider-track {
   display: flex;
   gap: 1rem;
-  animation: scroll-left 60s linear infinite;
+  animation: scroll-left 17s linear infinite;
 }
 
 .slider-track img {
