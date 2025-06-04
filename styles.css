@@ -218,21 +218,51 @@ header {
 
 .servicios h2 {
   color: var(--amarillo);
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
-.servicios h3 {
-  font-size: 1.5rem;
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.servicio-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 20px;
+  text-decoration: none;
   color: var(--blanco);
+  max-width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.servicio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.servicio-card img {
+  width: 100%;
+  border-radius: 15px;
   margin-bottom: 1rem;
 }
-.servicios img {
-  width: 100%;
-  max-width: 200px;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+.servicio-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: var(--amarillo);
 }
+
+.servicio-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--blanco);
+}
+
 .portafolio {
   padding: 4rem 2rem;
   max-width: 1200px;
