@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -15,9 +16,9 @@
       <div class="logo">Cinta Rota Films</div>
       <ul class="nav-links">
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="eventos.html">Eventos</a></li>
-        <li><a href="video.html">Videoclips</a></li>
-        <li><a href="contacto.html">Contáctanos</a></li>
+        <li><a href="foto.html">Fotografia</a></li>
+        <li><a href="video.html">videos</a></li>
+        <li><a href="contacto.html">Portafolio</a></li>
       </ul>
     </nav>
     <section class="hero">
@@ -32,7 +33,11 @@
       <h2>Portafolio</h2>
       <div class="galeria">
         <div class="foto"><img src="fotos/retrato/retrato1.jpg" alt="Retrato 1"><p>Retratos</p></div>
-        <div class="foto"><img src="fotos/eventos/evento1.jpg" alt="Evento 1"><p>Eventos</p></div>
+        <div class="foto">
+          <a href="fotos/eventos/evento1.jpg" data-lightbox="galeria-eventos" data-title="Nombre del evento">
+          <img src="fotos/eventos/evento1.jpg" alt="Evento">
+          </a>
+        </div>
         <div class="foto"><img src="fotos/fiestas/fiesta1.jpg" alt="Fiesta 1"><p>Fiestas</p></div>
         <div class="foto"><img src="fotos/videos/video1.jpg" alt="Videoclip 1"><p>Videoclips</p></div>
       </div>
@@ -44,5 +49,6 @@
     <p>WhatsApp: <a href="https://wa.me/524921964376">492 196 43 76</a></p>
     <p>&copy; 2025 Cinta Rota Films</p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
 </html>
