@@ -1,7 +1,8 @@
 /* styles.css */
+
+/*General */
 h2 {
   color: black
-  
 }
 
 :root {
@@ -68,7 +69,9 @@ header {
   background: var(--amarillo);
   color: var(--negro);
 }
+ 
 
+/*index*/
 .hero {
   text-align: center;
   padding: 4rem 2rem;
@@ -104,6 +107,72 @@ header {
   transform: scale(1.05);
 }
 
+
+.sobre-nosotros {
+  padding: 4rem 2rem;
+  background: linear-gradient(rgb(73, 21, 194), rgb(49, 33, 77));
+  text-align: center;
+}
+
+.sobre-nosotros h2 {
+  color:white;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contenido-sobre-nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contenido-sobre-nosotros .texto {
+  max-width: 800px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.contenido-sobre-nosotros .media {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.contenido-sobre-nosotros .media video,
+.contenido-sobre-nosotros .media img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.servicios {
+  padding: 4rem 2rem;
+  background: var(--gradiente-fondo);
+  text-align: center;
+}
+
+.servicios h2 {
+  color: var(--amarillo);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.servicios h3 {
+  font-size: 1.5rem;
+  color: var(--blanco);
+  margin-bottom: 1rem;
+}
+.servicios img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 .portafolio {
   padding: 4rem 2rem;
   max-width: 1200px;
