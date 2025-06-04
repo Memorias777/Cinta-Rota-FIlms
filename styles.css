@@ -107,6 +107,27 @@ header {
   transform: scale(1.05);
 }
 
+/*hacer resposivo las nuevas secciones para celular*/
+@media (max-width: 768px) {
+  .contenido-sobre-nosotros {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .contenido-sobre-nosotros .media {
+    grid-template-columns: 1fr; /* Mostrar una imagen por fila en móviles */
+  }
+
+  .contenido-sobre-nosotros .media img,
+  .contenido-sobre-nosotros .media video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .servicio {
+    margin-bottom: 2rem;
+  }
+}
 
 .sobre-nosotros {
   padding: 4rem 2rem;
