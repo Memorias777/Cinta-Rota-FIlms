@@ -171,6 +171,45 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.media-slider {
+  overflow: hidden;
+  width: 100%;
+  background: transparent;
+  margin-top: 2rem;
+}
+
+.slider-track {
+  display: flex;
+  gap: 1rem;
+  animation: scroll-left 60s linear infinite;
+}
+
+.slider-track img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animación que mueve las imágenes a la izquierda */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive: imágenes más pequeñas en móviles */
+@media (max-width: 768px) {
+  .slider-track img {
+    width: 150px;
+  }
+}
+
 .servicios {
   padding: 4rem 2rem;
   background: var(--gradiente-fondo);
