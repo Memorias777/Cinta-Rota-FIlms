@@ -1,60 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fotografía | Cinta Rota Films</title>
-      <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fotografía | Cinta Rota Films</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <a href="index.html" class="logo">Cinta Rota Films</a>
+      <a href="index.html" class="logo">
+        <img src="fotos/logo.jpg" alt="Logo de Cinta Rota Films" class="logo-img" />
+        <span class="logo-text">Cinta Rota Films</span>
+      </a>
       <ul class="nav-links">
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="fotografia.html" class="activo">Fotografía</a></li>
-        <li><a href="video.html">Video</a></li>
-        <li><a href="ambos.html">Ambos</a></li>
+        <li><a href="fotografia.html" class="active">Fotografía</a></li>
+        <li><a href="video.html">Videos</a></li>
+        <li><a href="contacto.html">Portafolio</a></li>
       </ul>
     </nav>
+    <section class="hero">
+      <h1>Fotografía Profesional</h1>
+      <p>Retratos, eventos, fiestas y más. Captura momentos únicos con estilo.</p>
+    </section>
   </header>
 
   <main>
-    <section class="hero">
-      <h1>Servicios de Fotografía</h1>
-      <p>Capturamos tus momentos con estilo, emoción y calidad profesional.</p>
+    <section class="galeria">
+      <h2>Galería de Fotografía</h2>
+      <div class="galeria-grid">
+        <a href="fotos/retrato/retrato1.jpg" data-lightbox="galeria" data-title="Retrato 1">
+          <img src="fotos/retrato/retrato1.jpg" alt="Retrato 1">
+        </a>
+        <a href="fotos/retrato/retrato2.jpg" data-lightbox="galeria" data-title="Retrato 2">
+          <img src="fotos/retrato/retrato2.jpg" alt="Retrato 2">
+        </a>
+        <a href="fotos/eventos/evento1.jpg" data-lightbox="galeria" data-title="Evento 1">
+          <img src="fotos/eventos/evento1.jpg" alt="Evento 1">
+        </a>
+        <a href="fotos/eventos/evento2.jpg" data-lightbox="galeria" data-title="Evento 2">
+          <img src="fotos/eventos/evento2.jpg" alt="Evento 2">
+        </a>
+        <a href="fotos/fiestas/fiesta1.jpg" data-lightbox="galeria" data-title="Fiesta 1">
+          <img src="fotos/fiestas/fiesta1.jpg" alt="Fiesta 1">
+        </a>
+        <a href="fotos/fiestas/fiesta2.jpg" data-lightbox="galeria" data-title="Fiesta 2">
+          <img src="fotos/fiestas/fiesta2.jpg" alt="Fiesta 2">
+        </a>
+      </div>
     </section>
 
-    <section class="servicios-detalle">
-      <div class="servicio">
-        <img src="fotos/retrato/retrato1.jpg" alt="Retrato">
-        <h2>Retratos</h2>
-        <p>Sesiones personalizadas en estudio o locación. Ideales para portafolios, redes sociales o momentos especiales.</p>
-        <span class="precio">Desde $800 MXN</span>
-      </div>
-
-      <div class="servicio">
-        <img src="fotos/eventos/evento1.jpg" alt="Evento Fotográfico">
-        <h2>Eventos</h2>
-        <p>Cubrimos tus eventos con enfoque artístico y documental. Bodas, conferencias, reuniones y más.</p>
-        <span class="precio">Desde $2,000 MXN</span>
-      </div>
-
-      <div class="servicio">
-        <img src="fotos/fiestas/fiesta1.jpg" alt="Fiestas Fotografía">
-        <h2>Fiestas</h2>
-        <p>Fotos vibrantes y espontáneas para capturar la energía de tus celebraciones.</p>
-        <span class="precio">Desde $1,500 MXN</span>
-      </div>
+    <section class="cta-section">
+      <h2>¿Quieres fotos así para tu evento?</h2>
+      <a href="https://wa.me/524921964376" class="cta">Contáctanos por WhatsApp</a>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Cinta Rota Films. Todos los derechos reservados.</p>
+    <p>Síguenos en Instagram, YouTube y Facebook: <strong>@cintarotafilms</strong></p>
+    <p>WhatsApp: <a href="https://wa.me/524921964376">492 196 43 76</a></p>
+    <p>&copy; 2025 Cinta Rota Films</p>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
 </html>

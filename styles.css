@@ -1,4 +1,13 @@
 /* styles.css */
+/* Para evitar cualquier scroll horizontal */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+/* Header y Navbar */
 .logo {
   display: flex;
   align-items: center;
@@ -401,6 +410,65 @@ footer a:hover {
   padding: 1.5rem;
   margin-bottom: 2rem;
 }
+
+.galeria {
+  padding: 2rem 1rem;
+  max-width: 100vw; /* Vista completa sin salir del ancho de ventana */
+  overflow-x: hidden; /* Evita que el contenedor permita overflow horizontal */
+  box-sizing: border-box;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Refuerzo para evitar scroll horizontal */
+}
+
+.galeria-grid a {
+  display: block;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  max-width: 100%;
+}
+
+.galeria-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 1rem;
+  max-width: 100%;
+}
+
+
+.galeria-grid a {
+  display: block;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+/*seccion de galeria para fotos*/
+.galeria-grid a:hover {
+  transform: scale(1.03);
+}
+
+.galeria-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
 
 .paquete h3 {
   font-size: 1.5rem;
