@@ -39,7 +39,7 @@ h2 {
   --negro: #121212;
   --azul-marino: #001f3f;
   --blanco: #ffffff;
-  --gradiente-hero: linear-gradient(135deg, #6a0dad, #001f3f);
+  --gradiente-hero: linear-gradient(135deg, #a960dd86, #1c5792);
   --gradiente-fondo: linear-gradient(180deg, #1e1e2f, #000000);
   --fuente: 'Outfit', sans-serif;
 }
