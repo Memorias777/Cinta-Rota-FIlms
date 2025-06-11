@@ -39,7 +39,7 @@ h2 {
   --negro: #121212;
   --azul-marino: #001f3f;
   --blanco: #ffffff;
-  --gradiente-hero: linear-gradient(135deg, #a960dd86, #1c5792);
+    --gradiente-hero: linear-gradient(135deg, #6a0dad, #353fcc);
   --gradiente-fondo: linear-gradient(180deg, #1e1e2f, #000000);
   --fuente: 'Outfit', sans-serif;
 }
@@ -159,8 +159,9 @@ header {
 
 .sobre-nosotros {
   padding: 4rem 2rem;
-  background: linear-gradient(rgb(73, 21, 194), rgb(49, 33, 77));
+  background: linear-gradient(#353fcc, #1e1e2f);
   text-align: center;
+  border-bottom: 4px solid var(--amarillo);
 }
 
 .sobre-nosotros h2 {
