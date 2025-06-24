@@ -51,7 +51,6 @@
       </ul>
       <p><strong>Extras:</strong></p>
       <label><input type="checkbox" onchange="actualizarPrecio(this, 500)"> Dron (+$500)</label><br>
-      <label><input type="checkbox" onchange="actualizarPrecio(this, 300)"> Álbum físico (+$300)</label>
     </div>
   </div>
 
@@ -115,11 +114,11 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 
-  <script>
+<script>
 function toggleDetalles(boton) {
   const detalles = boton.nextElementSibling;
-  detalles.classList.toggle("oculto");
-  boton.innerText = detalles.classList.contains("oculto") ? "Ver más" : "Ver menos";
+  detalles.classList.toggle("activo");
+  boton.innerText = detalles.classList.contains("activo") ? "Ver menos" : "Ver más";
 }
 
 function actualizarPrecio(checkbox, extra) {
@@ -139,6 +138,7 @@ function actualizarPrecio(checkbox, extra) {
   precioEl.innerText = `$${base + totalExtras}`;
 }
 </script>
+
 
 </body>
 </html>
