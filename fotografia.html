@@ -55,6 +55,8 @@
       <label><input type="checkbox" onchange="actualizarPrecio(this, 80)">📸 Foto impresa 13x18 cm (+$80 c/u)</label>
       <label><input type="checkbox" onchange="actualizarPrecio(this, 140)">📸 Foto impresa 20x25 cm (+$140 c/u)</label>
       <br>
+      <button class="whatsapp-btn" onclick="enviarWhatsapp(this)">📲 Comprar por WhatsApp</button>
+
     </div>
   </div>
 
@@ -74,7 +76,8 @@
       <label><input type="checkbox" onchange="actualizarPrecio(this, 500)"> Dron (+$500)</label>
       <label><input type="checkbox" onchange="actualizarPrecio(this, 50)">📸 Foto impresa 10x15 cm (+$50 c/u)</label>
       <label><input type="checkbox" onchange="actualizarPrecio(this, 80)">📸 Foto impresa 13x18 cm (+$80 c/u)</label>
-      <label><input type="checkbox" onchange="actualizarPrecio(this, 140)">📸 Foto impresa 20x25 cm (+$140 c/u)</label>
+      <label><input type="checkbox" onchange="actualizarPrecio(this, 140)">📸 Foto impresa 20x25 cm (+$140 c/u)</label><br>
+      <button class="whatsapp-btn" onclick="enviarWhatsapp(this)">📲 Comprar por WhatsApp</button>
     </div>
   </div>
 
@@ -95,7 +98,8 @@
       <label><input type="checkbox" onchange="actualizarPrecio(this, 0)"> video detras de camaras (+$0)</label>
       <label><input type="checkbox" onchange="actualizarPrecio(this, 50)">📸 Foto impresa 10x15 cm (+$50 c/u)</label>
       <label><input type="checkbox" onchange="actualizarPrecio(this, 80)">📸 Foto impresa 13x18 cm (+$80 c/u)</label>
-      <label><input type="checkbox" onchange="actualizarPrecio(this, 140)">📸 Foto impresa 20x25 cm (+$140 c/u)</label>
+      <label><input type="checkbox" onchange="actualizarPrecio(this, 140)">📸 Foto impresa 20x25 cm (+$140 c/u)</label><br>
+      <button class="whatsapp-btn" onclick="enviarWhatsapp(this)">📲 Comprar por WhatsApp</button>
     </div>
   </div>
 </section>
@@ -145,6 +149,27 @@ function actualizarPrecio(checkbox, extra) {
   });
 
   precioEl.innerText = `$${base + totalExtras}`;
+}
+
+function enviarWhatsapp(button) {
+  const paqueteDiv = button.closest(".paquete");
+  const titulo = paqueteDiv.querySelector("h3").innerText;
+  const precioTotal = paqueteDiv.querySelector(".precio").innerText;
+
+  const checkboxes = paqueteDiv.querySelectorAll("input[type='checkbox']:checked");
+  let extras = [];
+
+  checkboxes.forEach(cb => {
+    const label = cb.parentElement.innerText.trim();
+    extras.push(label);
+  });
+
+  const mensaje = `Hola, estoy interesado en el *${titulo}*.\nExtras seleccionados:\n${extras.length > 0 ? extras.join("\n") : "Ninguno"}\n\n*Precio Total:* ${precioTotal}`;
+
+  const numero = "524921964376"; // << Reemplaza con el número real (con lada internacional)
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+
+  window.open(url, "_blank");
 }
 </script>
 
