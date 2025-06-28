@@ -398,19 +398,39 @@ footer a:hover {
   flex-direction: column;
   align-items: center;
   transition: transform 0.4s ease, box-shadow 0.3s ease;
-  background: linear-gradient(135deg, #1e1e2f, #5b247a);
   backdrop-filter: blur(6px);
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
+.paquete-basico {
+  background: linear-gradient(135deg, #e3d7ff, #aa9cff);
+  color: white;
+}
+.paquete-basico h3 {
+  color: #3e007a;
+}
+.paquete-estandar {
+  background: linear-gradient(135deg, #c2f0ff, #49c1ff);
+  color: white;
+}
+.paquete-estandar h3 {
+  color: #0d47a1;
+}
 
-.paquete::before {
+.paquete-premium {
+  background: linear-gradient(135deg, #ffd967, #ffd104);
+  color: #1a1a1a;
+}
+.paquete-premium h3 {
+  color: #5b4100;
+}
+.paquete-premium::before {
   content: "";
   position: absolute;
   top: -50%;
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgb(57, 248, 137), transparent 70%);
+  background: radial-gradient(circle, #fa139ac2, transparent 70%);
   animation: pulseGrad 6s linear infinite;
   z-index: 0;
 }
