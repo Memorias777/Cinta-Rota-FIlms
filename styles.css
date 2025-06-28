@@ -381,12 +381,20 @@ footer a:hover {
 }
 .paquetes {
   padding: 2rem;
-  background: radial-gradient(circle at top, #f5f5f5, #f0ecff);
+  background: radial-gradient(circle at top, #1e1e2f, #2a003f, #0d001a);
   border-radius: 1.5rem;
   margin: 3rem 0;
   display: grid;
   gap: 2rem;
 }
+
+.paquetes h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
 
 .paquete {
   border-radius: 1.5rem;
