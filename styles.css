@@ -685,3 +685,30 @@ footer a:hover {
 }
 /* Footer */
 
+/*paguina de video*/
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.video-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.video-item p {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #444;
+}

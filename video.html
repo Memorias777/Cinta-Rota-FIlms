@@ -39,67 +39,156 @@
     </section>
   </header>
 <section class="paquetes">
-  <h2>Paquetes de Cobertura de Eventos</h2>
-  <div class="paquete">
-    <h3>Paquete Básico</h3>
+  <h2>Paquetes de Produccion Audiovisual</h2>
+  <!-- PAQUETESSSS!!! -->
+<div class="paquete paquete-basico">
+  <h3>Video Básico - <span class="precio" data-base="1500">$1,500</span></h3>
+  <button onclick="toggleDetalles(this)">Ver más</button>
+  <div class="detalles oculto">
+    <p style="color: black;">perfecto para Videos Musicales, Videos para redes sociales etc...</p>
+    <br>
     <ul>
-      <li>⏱️ Hasta 2 horas de cobertura</li>
-      <li>📸 20 a 40 fotos digitales</li>
-      <li>🖌️ Edición básica</li>
-      <li>🎉 Cobertura general del evento</li>
+      <li>Video de hasta 3 minutos</li>
+      <li>Grabacion Full HD</li>
+      <li>Edicion avanzada con programas Premium</li>
+      <li>Equipo completo de Grabacion dependiendo las necesidades de produccion</li>
     </ul>
-    <p><strong>Precio:</strong> $400 MXN</p>
+    <p><strong>Extras:</strong></p>
+    <label><input type="checkbox" onchange="actualizarPrecio(this, 500)"> Grabación en 4K (+$500)</label>
+    <label><input type="checkbox" onchange="actualizarPrecio(this, 1000)"> Anadir Dron especializado en video DJI (+$1000)</label>
+    <label><input type="checkbox" onchange="actualizarPrecio(this,1000)"> Produccion con Actores o Talentos (+$1000)</label>
+    <br>
+    <label>Fecha <input type="date" class="fecha-evento"></label>
+    <label>Tipo de video: <input type="text" placeholder="Ej. Testimonial, comercial simple..." class="tipo-evento"></label>
+    <button class="whatsapp-btn" onclick="enviarWhatsapp(this)">📲 Comprar por WhatsApp</button>
   </div>
+</div>
 
-  <div class="paquete">
-    <h3>Paquete Estándar</h3>
+<div class="paquete paquete-estandar">
+  <h3>Producción Intermedia - <span class="precio" data-base="3500">$3,500</span></h3>
+  <button onclick="toggleDetalles(this)">Ver más</button>
+  <div class="detalles oculto">
+    <p style="color: black;">Ideal para Cortometrajes, Videos Musicales, Comerciales y más...</p>
     <ul>
-      <li>⏱️ Hasta 4 horas de cobertura</li>
-      <li>📸 50 a 60 fotos digitales</li>
-      <li>🎬 Video de 3-5 minutos (edición básica)</li>
-      <li>🖌️ Edición avanzada</li>
-      <li>🎯 Cobertura detallada del evento</li>
+      <li>Video de hasta 10 minutos</li>
+      <li>Grabacion en Full HD</li>
+      <li>Edicion Avanzada Con Programas Premium</li>
+      <li>Equipo completo de Grabacion dependiendo las necesidades de produccion</li>
     </ul>
-    <p><strong>Precio:</strong> $600 MXN</p>
+    <p><strong>Extras:</strong></p>
+    <label><input type="checkbox" onchange="actualizarPrecio(this, 1000)"> Grabación en 4K (+$1000)</label>
+    <label><input type="checkbox" onchange="actualizarPrecio(this, 1000)"> Anadir Dron especializado en video DJI (+$1000)</label>
+    <label><input type="checkbox" onchange="actualizarPrecio(this,1000)"> Produccion con Actores o Talentos (+$1000)</label>
+    <br>
+    <label>Fecha <input type="date" class="fecha-evento"></label>
+    <label>Tipo de video: <input type="text" placeholder="Ej. Cortometraje, video musical sencillo..." class="tipo-evento"></label>
+    <button class="whatsapp-btn" onclick="enviarWhatsapp(this)">📲 Comprar por WhatsApp</button>
   </div>
+</div>
 
-  <div class="paquete">
-    <h3>Paquete Premium</h3>
+<div class="paquete paquete-premium">
+  <h3>Producción Premium - <span class="precio" data-base="5000">$5000</span></h3>
+  <button onclick="toggleDetalles(this)">Ver más</button>
+  <div class="detalles oculto">
+    <p>Ideal para Documentales, Videos Musicales de alto Impacto, Cortometrajes Cinematograficos</p>
     <ul>
-      <li>⏱️ Evento completo (máx. 5 horas)</li>
-      <li>📸 80 a 100 fotos digitales</li>
-      <li>🎬 Video de 5-7 minutos con tomas de dron</li>
-      <li>🖌️ Edición avanzada</li>
-      <li>📽️ Cobertura total del evento</li>
+      <li>Video de hasta 30 minutos</li>
+      <li>Grabacion Full HD</li>
+      <li>Equipo profesional (cámaras, dron, luces, audio)</li>
+      <li>Edición cinematográfica (colorización, efectos, música personalizada)</li>
     </ul>
-    <p><strong>Precio:</strong> $900 MXN</p>
+    <p><strong>Extras:</strong></p>
+    <label><input type="checkbox" onchange="actualizarPrecio(this, 2000)"> Grabación en 4K (+$2000)</label>
+    <label><input type="checkbox" onchange="actualizarPrecio(this, 1500)"> Grabación con guión / storyboard (+$1500)</label>
+    <label><input type="checkbox" onchange="actualizarPrecio(this, 2000)"> Producción con actores o talentos (+$2000)</label>
+    <br>
+    <label>Fecha <input type="date" class="fecha-evento"></label>
+    <label>Tipo de video: <input type="text" placeholder="Ej. Video musical, comercial grande..." class="tipo-evento"></label>
+    <button class="whatsapp-btn" onclick="enviarWhatsapp(this)">📲 Comprar por WhatsApp</button>
+  </div>
+</div>
+
+<section class="portafolio">
+  <h2>🎬 Galería de Videoclips y Cortometrajes</h2>
+  <div class="video-grid">
+    <div class="video-item">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID1" title="Video 1" frameborder="0" allowfullscreen></iframe>
+      <p>Video musical – "Nombre del tema"</p>
+    </div>
+    <div class="video-item">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID2" title="Video 2" frameborder="0" allowfullscreen></iframe>
+      <p>Cortometraje – "Título corto"</p>
+    </div>
+    <div class="video-item">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID3" title="Video 3" frameborder="0" allowfullscreen></iframe>
+      <p>Documental – "Tema o proyecto"</p>
+    </div>
+    <!-- Añade más aquí -->
   </div>
 </section>
-  <section class="portafolio">
-    <h2>Galería de Videoclips</h2>
-    <div class="galeria">
-      <div class="foto">
-        <img src="fotos/videos/video1.jpg" alt="Video 1" />
-        <p>Video 1</p>
-      </div>
-      <div class="foto">
-        <img src="fotos/videos/video2.jpg" alt="Video 2" />
-        <p>Video 2</p>
-      </div>
-      <div class="foto">
-        <img src="fotos/videos/video3.jpg" alt="Video 3" />
-        <p>Video 3</p>
-      </div>
-      <div class="foto">
-        <img src="fotos/videos/video4.jpg" alt="Video 4" />
-        <p>Video 4</p>
-      </div>
-    </div>
-  </section>
+
 
   <footer>
     <p>© 2025 Cinta Rota Films. Síguenos en Instagram, YouTube y Facebook. <br />
     <a href="https://wa.me/524921964376" target="_blank">WhatsApp: 492 196 43 76</a></p>
   </footer>
+
+  <script>
+function toggleDetalles(boton) {
+  const detalles = boton.nextElementSibling;
+  detalles.classList.toggle("activo");
+  boton.innerText = detalles.classList.contains("activo") ? "Ver menos" : "Ver más";
+}
+
+function actualizarPrecio(checkbox, extra) {
+  const contenedor = checkbox.closest(".paquete");
+  const precioEl = contenedor.querySelector(".precio");
+  const base = parseInt(precioEl.dataset.base);
+  const checkboxes = contenedor.querySelectorAll("input[type='checkbox']");
+  
+  let totalExtras = 0;
+  checkboxes.forEach(cb => {
+    if (cb.checked) {
+      const match = cb.parentElement.innerText.match(/\+\$(\d+)/);
+      if (match) totalExtras += parseInt(match[1]);
+    }
+  });
+
+  precioEl.innerText = `$${base + totalExtras}`;
+}
+/*boton de abrir menu*/
+function enviarWhatsapp(button) {
+  const paqueteDiv = button.closest(".paquete");
+  const titulo = paqueteDiv.querySelector("h3").innerText;
+  const precioTotal = paqueteDiv.querySelector(".precio").innerText;
+
+  const checkboxes = paqueteDiv.querySelectorAll("input[type='checkbox']:checked");
+  let extras = [];
+
+  checkboxes.forEach(cb => {
+    const label = cb.parentElement.innerText.trim();
+    extras.push(label);
+  });
+
+  // 🔥 Obtener fecha y tipo de evento
+  const fecha = paqueteDiv.querySelector(".fecha-evento")?.value || "No especificada";
+  const tipoEvento = paqueteDiv.querySelector(".tipo-evento")?.value || "No especificado";
+
+  const mensaje = `Hola, estoy interesado en el *${titulo}*.
+
+📅 Fecha del evento: ${fecha}
+🎉 Tipo de evento: ${tipoEvento}
+
+📦 Extras seleccionados:
+${extras.length > 0 ? extras.join("\n") : "Ninguno"}
+
+💰 *Precio Total:* ${precioTotal}`;
+
+  const numero = "524921964376"; // << Cambia esto si es necesario
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+
+  window.open(url, "_blank");
+}
+</script>
 </body>
 </html>
