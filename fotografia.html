@@ -130,12 +130,19 @@
 <section class="galeria">
   <h2>Galería de Fotografía</h2>
   <div class="galeria-grid">
-    <img src="fotos/retrato/retrato2.jpg" alt="Retrato 1">
-    <img src="fotos/retrato/retrato4.jpg" alt="Retrato 2">
-    <img src="fotos/retrato/retrato5.jpg" alt="Evento 1">
-    <img src="fotos/retrato/retrato1.jpg" alt="Evento 2">
-    <img src="fotos/retrato/retrato3.jpg" alt="Fiesta 1">
-    <img src="fotos/retrato/retrato6.jpg" alt="Fiesta 2">
+    <a href="fotos/retrato/retrato2.jpg" target="_blank" data-lightbox="retrato" data-title="Retrato 1">
+    <img src="fotos/retrato/retrato2.jpg" alt="Retrato 1"></a>
+    <a href="fotos/retrato/retrato4.jpg" target="_blank" data-lightbox="retrato" data-title="Retrato 2">
+    <img src="fotos/retrato/retrato4.jpg" alt="Retrato 2"></a>
+    <a href="fotos/retrato/retrato5.jpg" target="_blank" data-lightbox="retrato" data-title="Evento 1">
+    <img src="fotos/retrato/retrato5.jpg" alt="Evento 1"></a>
+    <a href="fotos/retrato/retrato1.jpg" target="_blank" data-lightbox="retrato" data-title="Evento 2">
+    <img src="fotos/retrato/retrato1.jpg" alt="Evento 2"></a>
+    <a href="fotos/retrato/retrato3.jpg" target="_blank" data-lightbox="retrato" data-title="Fiesta 1">
+    <img src="fotos/retrato/retrato3.jpg" alt="Fiesta 1"></a>
+    <a href="fotos/retrato/retrato6.jpg" target="_blank" data-lightbox="retrato" data-title="Fiesta 2">
+    <img src="fotos/retrato/retrato6.jpg" alt="Fiesta 2"></a>
+    
   </div>
 </section>
 
@@ -172,7 +179,7 @@ function actualizarPrecio(checkbox, extra) {
 
   precioEl.innerText = `$${base + totalExtras}`;
 }
-
+/*boton de abrir menu*/
 function enviarWhatsapp(button) {
   const paqueteDiv = button.closest(".paquete");
   const titulo = paqueteDiv.querySelector("h3").innerText;
@@ -205,9 +212,6 @@ ${extras.length > 0 ? extras.join("\n") : "Ninguno"}
 
   window.open(url, "_blank");
 }
-
 </script>
-
-
 </body>
 </html>
