@@ -1,44 +1,262 @@
-<!DOCTYPE html>
+[⚠️ Suspicious Content] [⚠️ Suspicious Content] <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cinta Rota Films</title>
-  <meta name="description" content="Productora audiovisual en Zacatecas. Cinta Rota Films ofrece fotografía y video para eventos, redes y videoclips.">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eventos | Cinta Rota Films</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
-    <!-- Botón de WhatsApp fijo abajo -->
+
+  <!-- Botón de WhatsApp fijo abajo -->
   <a href="https://wa.me/524921964376" class="boton-wsp" target="_blank" title="Contáctanos por WhatsApp">
     Contactanos!!
   </a>
 
   <header>
     <nav class="navbar">
-    <a href="index.html" class="logo">
-    <img src="fotos/logo.jpg" alt="Logo de Cinta Rota Films" class="logo-img">
-    <span class="logo-text">Cinta Rota Films</span>
-    </a>
-
+      <a href="index.html" class="logo">
+        <img src="fotos/logo.jpg" alt="Logo de Cinta Rota Films" class="logo-img" />
+        <span class="logo-text">Cinta Rota Films</span>
+      </a>
       <ul class="nav-links">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="fotografia.html">Fotografía</a></li>
         <li><a href="video.html">Videos</a></li>
-        <li><a href="Eventos.html">Eventos</a></li>
+        <li><a href="Eventos.html" class="active">Eventos</a></li>
       </ul>
     </nav>
     <section class="hero">
-  <h1>Eventos</h1>
-  <p>
-    En Cinta Rota Films nos especializamos en capturar la esencia de cada celebración.
-    Desde bodas, XV años y graduaciones, hasta fiestas privadas y eventos empresariales,
-    nuestro trabajo refleja emociones reales, momentos únicos y la energía de tu gran día. <br><br>
-    Conoce nuestro trabajo y deja que tu evento hable por sí solo. Estamos en Zacatecas, Zacatecas, México, listos para contar tu historia.
-  </p>
-</section>
+      <h1>Eventos Completos - Foto y Video</h1>
+        <p>
+    ¿Boda, XV años, graduación o fiesta? ¡Nosotros nos encargamos de todo!
+    Combina nuestros servicios de fotografía y video para capturar cada momento especial desde todos los ángulos. <br><br>
+    Desde Zacatecas, Zacatecas, México, creamos recuerdos que duran para toda la vida.
+    El combo perfecto para tu evento inolvidable.
+        </p>
+    </section>
   </header>
-</html> <!-- este comentario es para hacer comit y que salga xhido mi git-->
+
+  <main>
+
+<section class="paquetes">
+  <h2>Paquetes de Eventos Completos</h2>
+
+  <!-- PAQUETE BÁSICO EVENTOS -->
+  <div class="paquete paquete-basico">
+    <h3>Evento Básico - <span class="precio" data-base="2500">$2,500</span></h3>
+    <button onclick="toggleDetalles(this)">Ver más</button>
+    <div class="detalles oculto">
+      <p style="color: black;">Perfecto para fiestas familiares, cumpleaños, graduaciones pequeñas</p>
+      <br>
+      <ul>
+        <li>📸 1.5 horas de cobertura</li>
+        <li>📸 15 fotos digitales editadas en alta calidad</li>
+        <li>🎥 Video highlights de 2-3 minutos</li>
+        <li>📱 Contenido para redes sociales (stories y posts)</li>
+        <li>🎬 Edición profesional con música</li>
+      </ul>
+      <p><strong>Extras:</strong></p>
+      <label><input type="checkbox" onchange="actualizarPrecio(this, 500)"> Dron para tomas aéreas (+$500)</label>
+      <label><input type="checkbox" onchange="actualizarPrecio(this, 300)"> Video completo del evento (+$300)</label>
+      <label><input type="checkbox" onchange="actualizarPrecio(this, 200)"> +10 fotos adicionales (+$200)</label>
+      <br>
+      <label>Fecha del evento: <input type="date" class="fecha-evento"></label>
+      <label>Tipo de evento: <input type="text" placeholder="Ej. Cumpleaños, Graduación..." class="tipo-evento"></label>
+      <label>Número de invitados: <input type="number" placeholder="Aprox..." class="num-invitados"></label>
+      <button class="whatsapp-btn" onclick="enviarWhatsappEventos(this)">📲 Cotizar por WhatsApp</button>
+    </div>
+  </div>
+
+  <!-- PAQUETE ESTÁNDAR EVENTOS -->
+  <div class="paquete paquete-estandar">
+    <h3>Evento Estándar - <span class="precio" data-base="4000">$4,000</span></h3>
+    <button onclick="toggleDetalles(this)">Ver más</button>
+    <div class="detalles oculto">
+      <p style="color: black;">Ideal para bodas civiles, XV años, eventos corporativos</p>
+      <br>
+      <ul>
+        <li>📸 3 horas de cobertura completa</li>
+        <li>📸 30 fotos digitales editadas profesionalmente</li>
+        <li>🎥 Video highlights de 5-8 minutos</li>
+        <li>🎥 Video completo de ceremonia/momento principal</li>
+        <li>📱 Paquete completo para redes sociales</li>
+        <li>🎬 Edición cinematográfica con efectos</li>
+      </ul>
+      <p><strong>Extras:</strong></p>
+      <label><input type="checkbox" onchange="actualizarPrecio(this, 800)"> Dron especializado (+$800)</label>
+      <label><input type="checkbox" onchange="actualizarPrecio(this, 500)"> Segunda cámara/fotógrafo (+$500)</label>
+      <label><input type="checkbox" onchange="actualizarPrecio(this, 300)"> Album digital interactivo (+$300)</label>
+      <label><input type="checkbox" onchange="actualizarPrecio(this, 200)"> Video detrás de cámaras (+$200)</label>
+      <br>
+      <label>Fecha del evento: <input type="date" class="fecha-evento"></label>
+      <label>Tipo de evento: <input type="text" placeholder="Ej. Boda, XV años..." class="tipo-evento"></label>
+      <label>Número de invitados: <input type="number" placeholder="Aprox..." class="num-invitados"></label>
+      <button class="whatsapp-btn" onclick="enviarWhatsappEventos(this)">📲 Cotizar por WhatsApp</button>
+    </div>
+  </div>
+
+  <!-- PAQUETE PREMIUM EVENTOS -->
+  <div class="paquete paquete-premium">
+    <h3>Evento Premium - <span class="precio" data-base="6500">$6,500</span></h3>
+    <button onclick="toggleDetalles(this)">Ver más</button>
+    <div class="detalles oculto">
+      <p style="color: black;">Para bodas completas, eventos grandes, celebraciones VIP</p>
+      <br>
+      <ul>
+        <li>📸 Cobertura completa (todo el día)</li>
+        <li>📸 50+ fotos digitales en máxima calidad</li>
+        <li>🎥 Video documental completo (15-20 min)</li>
+        <li>🎥 Video highlights cinematográfico</li>
+        <li>🎥 Videos individuales (ceremonia, brindis, baile)</li>
+        <li>📱 Contenido premium para redes</li>
+        <li>🎬 Edición cinematográfica nivel profesional</li>
+      </ul>
+      <p><strong>Extras:</strong></p>
+      <label><input type="checkbox" onchange="actualizarPrecio(this, 1000)"> Dron 4K profesional (+$1000)</label>
+      <label><input type="checkbox" onchange="actualizarPrecio(this, 800)"> Equipo completo (2 fotógrafos + camarógrafo) (+$800)</label>
+      <label><input type="checkbox" onchange="actualizarPrecio(this, 500)"> Transmisión en vivo (+$500)</label>
+      <label><input type="checkbox" onchange="actualizarPrecio(this, 300)"> Album físico premium (+$300)</label>
+      <br>
+      <label>Fecha del evento: <input type="date" class="fecha-evento"></label>
+      <label>Tipo de evento: <input type="text" placeholder="Ej. Boda, Evento corporativo..." class="tipo-evento"></label>
+      <label>Número de invitados: <input type="number" placeholder="Aprox..." class="num-invitados"></label>
+      <button class="whatsapp-btn" onclick="enviarWhatsappEventos(this)">📲 Cotizar por WhatsApp</button>
+    </div>
+  </div>
+</section>
+
+<section class="galeria">
+  <h2>Galería de Eventos</h2>
+  <div class="galeria-grid">
+    <a href="fotos/eventos/evento1.jpg" target="_blank" data-lightbox="eventos" data-title="Boda - Ceremonia">
+    <img src="fotos/eventos/evento1.jpg" alt="Boda - Ceremonia"></a>
+    
+    <a href="fotos/eventos/evento2.jpg" target="_blank" data-lightbox="eventos" data-title="XV Años - Sesión">
+    <img src="fotos/eventos/evento2.jpg" alt="XV Años - Sesión"></a>
+    
+    <a href="fotos/eventos/evento3.jpg" target="_blank" data-lightbox="eventos" data-title="Graduación - Familia">
+    <img src="fotos/eventos/evento3.jpg" alt="Graduación - Familia"></a>
+    
+    <a href="fotos/eventos/evento4.jpg" target="_blank" data-lightbox="eventos" data-title="Cumpleaños - Celebración">
+    <img src="fotos/eventos/evento4.jpg" alt="Cumpleaños - Celebración"></a>
+    
+    <a href="fotos/eventos/evento5.jpg" target="_blank" data-lightbox="eventos" data-title="Evento Corporativo">
+    <img src="fotos/eventos/evento5.jpg" alt="Evento Corporativo"></a>
+    
+    <a href="fotos/eventos/evento6.jpg" target="_blank" data-lightbox="eventos" data-title="Boda - Recepción">
+    <img src="fotos/eventos/evento6.jpg" alt="Boda - Recepción"></a>
+  </div>
+</section>
+
+<section class="portafolio">
+  <h2>🎬 Videos de Eventos Destacados</h2>
+  <div class="video-item">
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/xYHLt-Lf_G8?si=u6YRcA3xAdklpyaL" title="Highlights de Boda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>Highlights de Boda - "Amor Eterno"</p>
+    </div>
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/iyP_rPlmQJc?si=eQhTvU2Poq4QNGTf" title="XV Años Cinematográfico" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>XV Años Cinematográfico - "Sueños de Princesa"</p>
+    </div>
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/l1tTc7rHqIw?si=kCO6iFUjPfuWyOH0" title="Evento Corporativo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>Evento Corporativo - "Logros y Celebración"</p>
+    </div>
+  </div>
+</section>
+
+<section class="info-adicional" style="background: linear-gradient(135deg, #2c3e50, #4ca1af); padding: 3rem 2rem; border-radius: 20px; margin: 2rem 0; text-align: center;">
+  <h2 style="color: #f1f1f1; margin-bottom: 1.5rem;">¿Qué incluye nuestro servicio de eventos?</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto;">
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 15px; backdrop-filter: blur(10px);">
+      <h3 style="color: #ffd700; margin-bottom: 1rem;">📸 Fotografía Profesional</h3>
+      <p style="color: #e0e0e0;">Capturamos cada momento importante con equipo de alta gama y edición profesional.</p>
+    </div>
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 15px; backdrop-filter: blur(10px);">
+      <h3 style="color: #ffd700; margin-bottom: 1rem;">🎥 Video Cinematográfico</h3>
+      <p style="color: #e0e0e0;">Creamos videos emotivos que cuentan la historia de tu evento de manera única.</p>
+    </div>
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 15px; backdrop-filter: blur(10px);">
+      <h3 style="color: #ffd700; margin-bottom: 1rem;">📱 Contenido para Redes</h3>
+      <p style="color: #e0e0e0;">Material optimizado para Instagram, Facebook y otras plataformas sociales.</p>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <p>Síguenos en Instagram, YouTube y Facebook: <strong>@cintarotafilms</strong></p>
+    <p>WhatsApp: <a href="https://wa.me/524921964376">492 196 43 76</a></p>
+    <p>&copy; 2025 Cinta Rota Films</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+<script>
+function toggleDetalles(boton) {
+  const detalles = boton.nextElementSibling;
+  detalles.classList.toggle("activo");
+  boton.innerText = detalles.classList.contains("activo") ? "Ver menos" : "Ver más";
+}
+
+function actualizarPrecio(checkbox, extra) {
+  const contenedor = checkbox.closest(".paquete");
+  const precioEl = contenedor.querySelector(".precio");
+  const base = parseInt(precioEl.dataset.base);
+  const checkboxes = contenedor.querySelectorAll("input[type='checkbox']");
+  
+  let totalExtras = 0;
+  checkboxes.forEach(cb => {
+    if (cb.checked) {
+      const match = cb.parentElement.innerText.match(/\+\$(\d+)/);
+      if (match) totalExtras += parseInt(match[1]);
+    }
+  });
+
+  precioEl.innerText = `$${base + totalExtras}`;
+}
+
+function enviarWhatsappEventos(button) {
+  const paqueteDiv = button.closest(".paquete");
+  const titulo = paqueteDiv.querySelector("h3").innerText;
+  const precioTotal = paqueteDiv.querySelector(".precio").innerText;
+
+  const checkboxes = paqueteDiv.querySelectorAll("input[type='checkbox']:checked");
+  let extras = [];
+
+  checkboxes.forEach(cb => {
+    const label = cb.parentElement.innerText.trim();
+    extras.push(label);
+  });
+
+  // Obtener información del evento
+  const fecha = paqueteDiv.querySelector(".fecha-evento")?.value || "No especificada";
+  const tipoEvento = paqueteDiv.querySelector(".tipo-evento")?.value || "No especificado";
+  const numInvitados = paqueteDiv.querySelector(".num-invitados")?.value || "No especificado";
+
+  const mensaje = `🎉 ¡Hola! Estoy interesado en el *${titulo}* para mi evento.
+
+📅 *Fecha del evento:* ${fecha}
+🎊 *Tipo de evento:* ${tipoEvento}  
+👥 *Número de invitados:* ${numInvitados}
+
+📦 *Extras seleccionados:*
+${extras.length > 0 ? extras.join("\n") : "• Ninguno"}
+
+💰 *Precio Total:* ${precioTotal}
+
+¿Podrían darme más información y confirmar disponibilidad para esta fecha?`;
+
+  const numero = "524921964376";
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+
+  window.open(url, "_blank");
+}
+</script>
+</body>
+</html>
