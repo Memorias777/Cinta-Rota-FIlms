@@ -42,17 +42,18 @@
   <main>
 
 <section class="paquetes">
-  <h2>Paquetes de Fotografía</h2>
+  <h2>Paquetes de Fotografía - Retrato</h2>
 
-  <!-- PAQUETE BÁSICO -->
-  <div class="paquete paquete-basico">
-    <h3>Paquete Básico - <span class="precio" data-base="700">$700</span></h3>
+  <!-- PAQUETE 1 RETRATO -->
+  <div class="paquete paquete-1">
+    <h3>Paquete 1 Retrato - <span class="precio" data-base="800">$800</span></h3>
     <button onclick="toggleDetalles(this)">Ver más</button>
     <div class="detalles oculto">
       <ul>
-        <li>1 hora de sesion</li>
+        <li>1 hora de sesión</li>
         <li>10 fotos digitales editadas en alta calidad</li>
-        <li>1 localizacion</li>
+        <li>1 locación</li>
+        <li>1 outfit</li>
       </ul>
       <p><strong>Extras:</strong></p>
       <label><input type="checkbox" onchange="actualizarPrecio(this, 500)"> Dron (+$500)</label>
@@ -60,92 +61,71 @@
       <label><input type="checkbox" onchange="actualizarPrecio(this, 80)">📸 Foto impresa 13x18 cm (+$80 c/u)</label>
       <label><input type="checkbox" onchange="actualizarPrecio(this, 140)">📸 Foto impresa 20x25 cm (+$140 c/u)</label>
       <br>
-      <label for="">Fecha <input type="date" class="fecha-evento">
-      </label>
-      <label>
-        Tipo de evento:
-        <input type="text" placeholder="Ej. Boda, Cumpleaños..." class="tipo-evento">
-      </label>
+      <label>Fecha <input type="date" class="fecha-evento"></label>
+      <label>Tipo de evento: <input type="text" placeholder="Ej. Boda, Cumpleaños..." class="tipo-evento"></label>
       <p style="font-size: 14px; color: #555;">
-    Al hacer clic en el botón de <strong>Comprar por WhatsApp</strong>, aceptas nuestros 
-    <a href="terminos.pdf" target="_blank" style="color: #007BFF; text-decoration: underline;">
-        Términos y Condiciones
-    </a>.
-</p>
-
+        Al hacer clic en el botón de <strong>Comprar por WhatsApp</strong>, aceptas nuestros 
+        <a href="terminos.pdf" target="_blank" style="color: #007BFF; text-decoration: underline;">Términos y Condiciones</a>.
+      </p>
       <button class="whatsapp-btn" onclick="enviarWhatsapp(this)">📲 Comprar por WhatsApp</button>
     </div>
   </div>
 
-  <!-- PAQUETE ESTÁNDAR -->
-  <div class="paquete paquete-estandar">
-    <h3>Paquete Estándar - <span class="precio" data-base="1200">$1,200</span></h3>
+  <!-- PAQUETE 2 RETRATO -->
+  <div class="paquete paquete-2">
+    <h3>Paquete 2 Retrato - <span class="precio" data-base="1500">$1,500</span></h3>
     <button onclick="toggleDetalles(this)">Ver más</button>
     <div class="detalles oculto">
       <ul>
         <li>1.5 horas</li>
         <li>20 fotos digitales editadas en alta calidad</li>
-        <li>2 localizaciones</li>
+        <li>2 locaciones cercanas</li>
         <li>2 cambios de outfit</li>
-
       </ul>
       <p><strong>Extras:</strong></p>
       <label><input type="checkbox" onchange="actualizarPrecio(this, 500)"> Dron (+$500)</label>
       <label><input type="checkbox" onchange="actualizarPrecio(this, 50)">📸 Foto impresa 10x15 cm (+$50 c/u)</label>
       <label><input type="checkbox" onchange="actualizarPrecio(this, 80)">📸 Foto impresa 13x18 cm (+$80 c/u)</label>
-      <label><input type="checkbox" onchange="actualizarPrecio(this, 140)">📸 Foto impresa 20x25 cm (+$140 c/u)</label><br>
-      <label for="">Fecha <input type="date" class="fecha-evento">
-      </label>
-      <label>
-        Tipo de evento:
-        <input type="text" placeholder="Ej. Boda, Cumpleaños..." class="tipo-evento">
-      </label>
+      <label><input type="checkbox" onchange="actualizarPrecio(this, 140)">📸 Foto impresa 20x25 cm (+$140 c/u)</label>
+      <br>
+      <label>Fecha <input type="date" class="fecha-evento"></label>
+      <label>Tipo de evento: <input type="text" placeholder="Ej. Boda, Cumpleaños..." class="tipo-evento"></label>
       <p style="font-size: 14px; color: #555;">
-    Al hacer clic en el botón de <strong>Comprar por WhatsApp</strong>, aceptas nuestros 
-    <a href="Términos y Condiciones de Cinta Rota Films.pdf" target="_blank" style="color: #007BFF; text-decoration: underline;">
-        Términos y Condiciones
-    </a>.
-</p>
-
+        Al hacer clic en el botón de <strong>Comprar por WhatsApp</strong>, aceptas nuestros 
+        <a href="terminos.pdf" target="_blank" style="color: #007BFF; text-decoration: underline;">Términos y Condiciones</a>.
+      </p>
       <button class="whatsapp-btn" onclick="enviarWhatsapp(this)">📲 Comprar por WhatsApp</button>
     </div>
   </div>
 
-  <!-- PAQUETE PREMIUM -->
-  <div class="paquete paquete-premium">
-    <h3>Paquete Premium - <span class="precio" data-base="1800">$1,800</span></h3>
+  <!-- PAQUETE 3 RETRATO -->
+  <div class="paquete paquete-3">
+    <h3>Paquete 3 Retrato - <span class="precio" data-base="2000">$2,000</span></h3>
     <button onclick="toggleDetalles(this)">Ver más</button>
     <div class="detalles oculto">
       <ul>
-        <li>2 horas de sesion</li>
-        <li>30 fotos digitales en alta calidad</li>
-        <li>Hasta 4 localizaciones</li>
-        <li>Edicion avanzada</li>
-        <li>4 cambios de outfit</li>
+        <li>2 horas</li>
+        <li>30 fotos digitales editadas en alta calidad</li>
+        <li>3 locaciones cercanas</li>
+        <li>3 cambios de outfit</li>
       </ul>
       <p><strong>Extras:</strong></p>
       <label><input type="checkbox" onchange="actualizarPrecio(this, 500)"> Dron (+$500)</label>
-      <label><input type="checkbox" onchange="actualizarPrecio(this, 0)"> video detras de camaras (+$0)</label>
       <label><input type="checkbox" onchange="actualizarPrecio(this, 50)">📸 Foto impresa 10x15 cm (+$50 c/u)</label>
       <label><input type="checkbox" onchange="actualizarPrecio(this, 80)">📸 Foto impresa 13x18 cm (+$80 c/u)</label>
-      <label><input type="checkbox" onchange="actualizarPrecio(this, 140)">📸 Foto impresa 20x25 cm (+$140 c/u)</label><br>
-      <label for="">Fecha <input type="date" class="fecha-evento">
-      </label>
-      <label>
-        Tipo de evento:
-        <input type="text" placeholder="Ej. Boda, Cumpleaños..." class="tipo-evento">
-      </label>
+      <label><input type="checkbox" onchange="actualizarPrecio(this, 140)">📸 Foto impresa 20x25 cm (+$140 c/u)</label>
+      <br>
+      <label>Fecha <input type="date" class="fecha-evento"></label>
+      <label>Tipo de evento: <input type="text" placeholder="Ej. Boda, Cumpleaños..." class="tipo-evento"></label>
       <p style="font-size: 14px; color: #555;">
-    Al hacer clic en el botón de <strong>Comprar por WhatsApp</strong>, aceptas nuestros 
-    <a href="terminos.pdf" target="_blank" style="color: #007BFF; text-decoration: underline;">
-        Términos y Condiciones
-    </a>.
-</p>
-
+        Al hacer clic en el botón de <strong>Comprar por WhatsApp</strong>, aceptas nuestros 
+        <a href="terminos.pdf" target="_blank" style="color: #007BFF; text-decoration: underline;">Términos y Condiciones</a>.
+      </p>
       <button class="whatsapp-btn" onclick="enviarWhatsapp(this)">📲 Comprar por WhatsApp</button>
     </div>
   </div>
 </section>
+
 
 
 <section class="galeria">
